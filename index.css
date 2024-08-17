@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+.bg-container{
+    font-family: 'Roboto';
+}
+.nav-cont{
+    height: 80px;
+}
+.logo{
+    height: 40px;
+    width: 100px;
+}
+.links{
+    gap: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+a:hover {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.ham-cont{
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3px;
+    margin-top: -2px;
+}
+.bg-img-cont{
+    background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/10/new-zealand-mountains-landscape-sky-ocean-5k_1540140941.jpg.webp');
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+.main-head{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+.description{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card{
+    min-height: 300px;
+    border-radius: 10px;
+}
+.active-btn{
+    height: 40px;
+    width: 85px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: black;
+    border: 0px;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+}
+.unactive-btn{
+    height: 40px;
+    width: 85px;
+    color: black;
+    font-size: 15px;
+    background-color: transparent;
+    border: 0px;
+    padding: 8px 12 px;
+    cursor: pointer;
+    outline: none;
+}
+.input-col{
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+label{
+    color: gray;
+    margin-bottom: -5px;
+}
+.input-col label{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 300;
+}
+.input-col input{
+    border: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+}
+.date-input{
+    width: 100px;
+    color: black;
+}
+.cal{
+    font-size: 12px;
+    padding: 8px;
+}
+#nights p{
+    font-size: 12px;
+}
+.night-icon{
+    font-size: 10px; 
+    text-align: center;
+}
+.dropdown-select-btn{
+    background-color: transparent;
+    color: black;
+    font-size: 15px;
+    border: 0px;
+    padding: 5px;
+}
+.dropdown-select-btn:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0.25rem;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+.search-icon-cont{
+    height: 80px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.star-rating {
+    display: flex;
+}
+.star-rating p{
+    padding: 10px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating input:checked ~ label ~ label {
+    color: black;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: black;
+}
+
+.star-rating input:checked ~ label:before {
+    content: '\2605';
+}
+
+.star-rating label:before {
+    content: '\2606'; 
+}
+@media screen and (max-width: 767px){
+    .logo{
+        width: 50px;
+        height: 35px;
+    }
+    .links{
+        gap: 7px;
+    }
+    a{
+        font-size: 10px;
+    }
+    .date-input{
+        width: 60px;
+        font-size: 12px;
+    }
+    .cal{
+        display: none;
+    }
+    .dropdown-select-btn{
+        font-size: 12px;
+    }
+}
