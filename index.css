@@ -19,12 +19,17 @@ a{
     color: black;
     font-weight: 500;
     font-size: 15px;
+    padding: 2px;
     cursor: pointer;
 }
 a:hover {
     font-size: 16px;
     font-weight: 600;
     color: black;
+}
+.icon{
+    font-size: 1rem;
+    padding: 1px;
 }
 .ham-cont{
     width: 60px;
@@ -192,7 +197,7 @@ label{
         height: 35px;
     }
     .links{
-        gap: 7px;
+        gap: 6px;
     }
     a{
         font-size: 10px;
@@ -203,6 +208,9 @@ label{
     }
     .cal{
         display: none;
+    }
+    .icon{
+        font-size: 0.7px;
     }
     .dropdown-select-btn{
         font-size: 12px;
